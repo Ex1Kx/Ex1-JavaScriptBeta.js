@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap');
+	</style>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<title>AREAS</title>
+</head>
+<header>
+	<h1>Calculo De Areas</h1>
+	<li><a href="index.html">Triangulo</a></li>
+	<li><a href="cuadrado.html">Cuadrado</a></li>
+	<li><a href="trapecio.html">Trapecio</a></li>
+</header>
+<body>
+	   <h2>AREA DE UN TRAPECIO</h2>
+    <form onsubmit = "return calculo()" >
+      <input type="text" placeholder="Ingrese La Primer Base..." id="base" />
+      <input type="text" placeholder="Ingrese La Segunda Base..." id="base2" />
+      <input type="text" placeholder="Ingrese La Altura..." id="altura" />
+      <input class="sub" type="submit" value="Calcular Area" />
+    </form>
+    <p id="resultado"></p>
+
+    <script>
+        function calculo(){
+        let p = document.getElementById("resultado");
+        let base = parseInt(document.getElementById("base").value);
+        let base2 = parseInt(document.getElementById("base2").value);
+        let altura = parseInt(document.getElementById("altura").value);
+        let area = base + base2 * altura / 2;
+        p.innerHTML += area + "<br>";
+        return false;
+        }
+    </script>
+
+    <img src="images/3.png">
+
+
+</body>
+</html>
